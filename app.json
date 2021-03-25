@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "which-card",
-    "slug": "which-card",
+    "slug": "no-painful-use-credit-card",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -19,7 +19,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.youjf.whichcard"
     },
     "android": {
       "adaptiveIcon": {

@@ -6,6 +6,7 @@ import * as React from 'react';
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import TabOneScreen from '../screens/TabOneScreen';
+import CardsScreen from '../screens/CardsScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
 import { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';
 
@@ -19,19 +20,19 @@ export default function BottomTabNavigator() {
       initialRouteName="TabOne"
       tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}>
       <BottomTab.Screen
-        name="TabOne"
+        name="Offers"
         component={TabOneNavigator}
         options={{
           tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
         }}
       />
-      <BottomTab.Screen
-        name="TabTwo"
-        component={TabTwoNavigator}
-        options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
-        }}
-      />
+      {/*<BottomTab.Screen*/}
+      {/*  name="TabTwo"*/}
+      {/*  component={TabTwoNavigator}*/}
+      {/*  options={{*/}
+      {/*    tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,*/}
+      {/*  }}*/}
+      {/*/>*/}
     </BottomTab.Navigator>
   );
 }
@@ -52,7 +53,12 @@ function TabOneNavigator() {
       <TabOneStack.Screen
         name="TabOneScreen"
         component={TabOneScreen}
-        options={{ headerTitle: 'Tab One Title' }}
+        options={{ headerTitle: '⌂' }}
+      />
+        <TabOneStack.Screen
+        name="CardsScreen"
+        component={CardsScreen}
+        options={({ route }) => ({ title: route.params.headerTitle })}
       />
     </TabOneStack.Navigator>
   );
@@ -66,7 +72,7 @@ function TabTwoNavigator() {
       <TabTwoStack.Screen
         name="TabTwoScreen"
         component={TabTwoScreen}
-        options={{ headerTitle: 'Tab Two Title' }}
+        options={{ headerTitle: 'Settings' }}
       />
     </TabTwoStack.Navigator>
   );
