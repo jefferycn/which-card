@@ -25,10 +25,6 @@
         {"key": "chase-freedom", "tag": "costco", "value": 6.25, "expire": "3/31/2021"},
         {"key": "chase-freedom", "tag": "phone", "value": 6.25, "expire": "3/31/2021"},
         {"key": "chase-freedom", "tag": "streaming", "value": 6.25, "expire": "3/31/2021"},
-        {"key": "chase-freedom", "tag": "gas-station", "value": 6.25, "start": "4/1/2021", "expire": "6/30/2021"},
-        {"key": "chase-freedom", "tag": "home-depot", "value": 6.25, "start": "4/1/2021", "expire": "6/30/2021"},
-        {"key": "chase-freedom", "tag": "ace", "value": 6.25, "start": "4/1/2021", "expire": "6/30/2021"},
-        {"key": "chase-freedom", "tag": "lowes", "value": 6.25, "start": "4/1/2021", "expire": "6/30/2021"},
         {"key": "citi-costco", "tag": "gas-station", "value": 4},
         {"key": "citi-costco", "tag": "dining", "value": 3}
     ]
