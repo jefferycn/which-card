@@ -15,23 +15,17 @@
         {"key": "citi-costco", "name": "Citi Costco"}
     ],
     "offers": [
-        {"key": "amex-platinum", "tag": "super-market", "value": 10, "expire": "5/6/2021"},
-        {"key": "amex-platinum", "tag": "gas-station", "value": 10, "expire": "5/6/2021"},
         {"key": "amex-platinum", "tag": "flight", "value": 5},
         {"key": "amex-blue-cash", "tag": "super-market", "value": 3},
         {"key": "amex-blue-cash", "tag": "gas-station", "value": 2},
         {"key": "chase-sapphire", "tag": "super-market", "value": 2.5},
         {"key": "chase-sapphire", "tag": "dining", "value": 2.5},
-        {"key": "chase-sapphire", "tag": "ikea", "value": 10},
+        {"key": "citi-costco", "tag": "gas-station", "value": 4},
+        {"key": "citi-costco", "tag": "dining", "value": 3},
         {"key": "chase-freedom", "tag": "costco", "value": 6.25, "expire": "3/31/2021"},
         {"key": "chase-freedom", "tag": "phone", "value": 6.25, "expire": "3/31/2021"},
         {"key": "chase-freedom", "tag": "streaming", "value": 6.25, "expire": "3/31/2021"},
-        {"key": "chase-freedom", "tag": "99-ranch", "value": 6.25, "start": "7/1/2021", "expire": "9/30/2021"},
-        {"key": "chase-freedom", "tag": "safeway", "value": 6.25, "start": "7/1/2021", "expire": "9/30/2021"},
-        {"key": "chase-freedom", "tag": "trader-joes", "value": 6.25, "start": "7/1/2021", "expire": "9/30/2021"},
-        {"key": "chase-freedom", "tag": "whole-foods", "value": 6.25, "start": "7/1/2021", "expire": "9/30/2021"},
-        {"key": "chase-freedom", "tag": "ikea", "value": 10},
-        {"key": "citi-costco", "tag": "gas-station", "value": 4},
-        {"key": "citi-costco", "tag": "dining", "value": 3}
+        {"key": "chase-freedom", "tag": "super-market", "value": 6.25, "start": "7/1/2021", "expire": "9/30/2021"},
+        {"key": "chase-freedom", "tag": "streaming", "value": 6.25, "start": "7/1/2021", "expire": "9/30/2021"}
     ]
 }
