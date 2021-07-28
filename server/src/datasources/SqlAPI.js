@@ -46,7 +46,17 @@ class SqlAPI extends DataSource {
         },
       },
     });
-    return offers.map(offer => this.offerReducer(offer));
+
+    return offers.map(offer => this.offerReducer(offer)).
+      reduce((newOffers, offer) => {
+        const index = newOffers.findIndex(item => item.tagId === offer.tagId);
+        if (index === -1) {
+          newOffers.push(offer);
+        } else if (newOffers[index].value < offer.value) {
+          newOffers[index] = offer;
+        }
+        return newOffers;
+      }, []);
   }
 
   offerReducer(offer) {
