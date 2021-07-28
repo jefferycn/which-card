@@ -1,33 +1,130 @@
 {
-    "tags": [
-        {"key": "super-market", "name": "超市"},
-        {"key": "gas-station", "name": "加油"},
-        {"key": "flight", "name": "机票"},
-        {"key": "dining", "name": "吃饭"},
-        {"key": "phone", "name": "电话"},
-        {"key": "streaming", "name": "流媒体"}
-    ],
-    "cards": [
-        {"key": "amex-platinum", "name": "Amex Platinum"},
-        {"key": "amex-blue-cash", "name": "Amex Blue Cash Everyday"},
-        {"key": "chase-sapphire", "name": "Chase Sapphire"},
-        {"key": "chase-freedom", "name": "Chase Freedom"},
-        {"key": "chase-freedom-unlimited", "name": "Chase Freedom Unlimited"},
-        {"key": "citi-costco", "name": "Citi Costco"}
-    ],
-    "offers": [
-        {"key": "amex-platinum", "tag": "flight", "value": 5},
-        {"key": "amex-blue-cash", "tag": "super-market", "value": 3},
-        {"key": "amex-blue-cash", "tag": "gas-station", "value": 2},
-        {"key": "chase-sapphire", "tag": "super-market", "value": 2.5},
-        {"key": "chase-sapphire", "tag": "dining", "value": 2.5},
-        {"key": "citi-costco", "tag": "gas-station", "value": 4},
-        {"key": "citi-costco", "tag": "dining", "value": 3},
-        {"key": "chase-freedom", "tag": "costco", "value": 6.25, "expire": "3/31/2021"},
-        {"key": "chase-freedom", "tag": "phone", "value": 6.25, "expire": "3/31/2021"},
-        {"key": "chase-freedom", "tag": "streaming", "value": 6.25, "expire": "3/31/2021"},
-        {"key": "chase-freedom", "tag": "super-market", "value": 6.25, "start": "7/1/2021", "expire": "9/30/2021"},
-        {"key": "chase-freedom", "tag": "streaming", "value": 6.25, "start": "7/1/2021", "expire": "9/30/2021"},
-        {"key": "chase-freedom-unlimited", "tag": "super-market", "value": 6.25, "start": "7/14/2021", "expire": "7/13/2022"}
-    ]
+  "tags": [
+    {
+      "key": "super-market",
+      "name": "超市"
+    },
+    {
+      "key": "gas-station",
+      "name": "加油"
+    },
+    {
+      "key": "flight",
+      "name": "机票"
+    },
+    {
+      "key": "dining",
+      "name": "吃饭"
+    },
+    {
+      "key": "phone",
+      "name": "电话"
+    },
+    {
+      "key": "streaming",
+      "name": "流媒体"
+    }
+  ],
+  "cards": [
+    {
+      "key": "amex-platinum",
+      "name": "Amex Platinum"
+    },
+    {
+      "key": "amex-blue-cash",
+      "name": "Amex Blue Cash Everyday"
+    },
+    {
+      "key": "chase-sapphire-preferred",
+      "name": "Chase Sapphire Preferred"
+    },
+    {
+      "key": "chase-freedom",
+      "name": "Chase Freedom"
+    },
+    {
+      "key": "chase-freedom-unlimited",
+      "name": "Chase Freedom Unlimited"
+    },
+    {
+      "key": "citi-costco",
+      "name": "Citi Costco"
+    }
+  ],
+  "offers": [
+    {
+      "key": "amex-platinum",
+      "tag": "flight",
+      "value": 5
+    },
+    {
+      "key": "amex-blue-cash",
+      "tag": "super-market",
+      "value": 3
+    },
+    {
+      "key": "amex-blue-cash",
+      "tag": "gas-station",
+      "value": 2
+    },
+    {
+      "key": "chase-sapphire-preferred",
+      "tag": "super-market",
+      "value": 2.5
+    },
+    {
+      "key": "chase-sapphire-preferred",
+      "tag": "dining",
+      "value": 2.5
+    },
+    {
+      "key": "citi-costco",
+      "tag": "gas-station",
+      "value": 4
+    },
+    {
+      "key": "citi-costco",
+      "tag": "dining",
+      "value": 3
+    },
+    {
+      "key": "chase-freedom",
+      "tag": "costco",
+      "value": 6.25,
+      "expire": "3/31/2021"
+    },
+    {
+      "key": "chase-freedom",
+      "tag": "phone",
+      "value": 6.25,
+      "expire": "3/31/2021"
+    },
+    {
+      "key": "chase-freedom",
+      "tag": "streaming",
+      "value": 6.25,
+      "expire": "3/31/2021"
+    },
+    {
+      "key": "chase-freedom",
+      "tag": "super-market",
+      "value": 6.25,
+      "start": "7/1/2021",
+      "expire": "9/30/2021"
+    },
+    {
+      "key": "chase-freedom",
+      "tag": "streaming",
+      "value": 6.25,
+      "start": "7/1/2021",
+      "expire": "9/30/2021"
+    },
+    {
+      "key": "chase-freedom-unlimited",
+      "tag": "super-market",
+      "value": 6.25,
+      "start": "7/14/2021",
+      "expire": "7/13/2022"
+    }
+  ]
 }
