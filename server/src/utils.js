@@ -34,7 +34,7 @@ module.exports.createStore = () => {
     $in: Op.in,
   };
 
-  const db = new Sequelize('sqlite:store.sqlite');
+  const db = new Sequelize('sqlite:data/store.sqlite');
 
   const cards = db.define('card', {
     id: {
