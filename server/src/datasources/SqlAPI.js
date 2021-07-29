@@ -96,6 +96,32 @@ class SqlAPI extends DataSource {
     return tag;
   }
 
+  async getTag(key) {
+    const tag = await this.findTagByKey(key);
+    const Offer = this.store.offers;
+    tag.offers = Offer.findAll({
+      where: {
+        tagId: tag.id,
+        endDate: {
+          [Op.or]: [
+            null,
+            { [Op.gt]: new Date() },
+          ],
+        },
+        startDate: {
+          [Op.or]: [
+            null,
+            { [Op.lt]: new Date() },
+          ],
+        },
+      },
+      order: [
+        ['value', 'DESC'],
+      ],
+    });
+    return tag;
+  }
+
   findTagByKey(key) {
     return this.store.tags.findOne({
       where: { key },
@@ -110,7 +136,13 @@ class SqlAPI extends DataSource {
     return card;
   }
 
-  async findOrCreateOffer({ cardKey, tagKey, value, startDate, endDate } = {}) {
+  async createOrUpdateOffer({
+    cardKey,
+    tagKey,
+    value,
+    startDate,
+    endDate,
+  } = {}) {
     const Card = this.store.cards;
     const Tag = this.store.tags;
     const Offer = this.store.offers;

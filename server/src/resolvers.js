@@ -3,7 +3,7 @@ module.exports = {
     offers: (_, __, { dataSources }) => dataSources.SqlAPI.getOffers(),
     getOffer: (
       _, { id }, { dataSources }) => dataSources.SqlAPI.findOfferById(id),
-    getTag: (_, { key }, { dataSources }) => dataSources.SqlAPI.findTagByKey(
+    getTag: (_, { key }, { dataSources }) => dataSources.SqlAPI.getTag(
       key),
     getCard: (_, { key }, { dataSources }) => dataSources.SqlAPI.findCardByKey(
       key),
@@ -23,7 +23,7 @@ module.exports = {
       { key, name }),
     createOffer: (
       _, { cardKey, tagKey, value, startDate, endDate },
-      { dataSources }) => dataSources.SqlAPI.findOrCreateOffer(
+      { dataSources }) => dataSources.SqlAPI.createOrUpdateOffer(
       { cardKey, tagKey, value, startDate, endDate }),
   },
 };

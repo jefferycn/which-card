@@ -26,8 +26,15 @@ const typeDefs = gql`
   type Query {
     offers: [Offer]!
     getOffer(id: ID!): Offer!
-    getTag(key: String!): Tag!
+    getTag(key: String!): TagWithOffers!
     getCard(key: String!): Card!
+  }
+
+  type TagWithOffers {
+    id: ID!
+    key: String!
+    name: String!
+    offers: [Offer]
   }
 
   type Mutation {
