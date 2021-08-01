@@ -24,7 +24,7 @@ const typeDefs = gql`
   }
 
   type Query {
-    offers: [Offer]!
+    offers(mode: String): [Offer]!
     getOffer(id: ID!): Offer!
     getTag(key: String!): TagWithOffers!
     getCard(key: String!): Card!

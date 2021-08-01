@@ -29,8 +29,26 @@ class SqlAPI extends DataSource {
     this.cache = config.cache;
   }
 
-  async getOffers() {
+  async getOffers({ mode: mode } = { mode: 'full' }) {
+    let excludedTagKeys = [];
+    if (mode !== 'full') {
+      excludedTagKeys = [
+        'flight',
+        'streaming',
+      ];
+    }
+    const Tag = this.store.tags;
     const offers = await this.store.offers.findAll({
+      include: [
+        {
+          model: Tag,
+          where: {
+            key: {
+              [Op.notIn]: excludedTagKeys,
+            },
+          },
+        },
+      ],
       where: {
         endDate: {
           [Op.or]: [

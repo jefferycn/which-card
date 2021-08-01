@@ -1,6 +1,7 @@
 module.exports = {
   Query: {
-    offers: (_, __, { dataSources }) => dataSources.SqlAPI.getOffers(),
+    offers: (_, { mode }, { dataSources }) => dataSources.SqlAPI.getOffers(
+      { mode }),
     getOffer: (
       _, { id }, { dataSources }) => dataSources.SqlAPI.findOfferById(id),
     getTag: (_, { key }, { dataSources }) => dataSources.SqlAPI.getTag(
