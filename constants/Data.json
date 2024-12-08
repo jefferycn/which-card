@@ -27,6 +27,10 @@
   ],
   "cards": [
     {
+      "key": "uar",
+      "name": "US Bank Altitude Reserve"
+    },
+    {
       "key": "amex-platinum",
       "name": "Amex Platinum"
     },
@@ -53,78 +57,22 @@
   ],
   "offers": [
     {
-      "key": "amex-platinum",
-      "tag": "flight",
-      "value": 5
+      "key": "uar",
+      "tag": "ikea",
+      "value": 10,
+      "expire": "12/31/2024"
     },
     {
-      "key": "amex-blue-cash",
-      "tag": "super-market",
-      "value": 3
+      "key": "uar",
+      "tag": "home depot",
+      "value": 10,
+      "expire": "12/18/2024"
     },
     {
-      "key": "amex-blue-cash",
-      "tag": "gas-station",
-      "value": 2
-    },
-    {
-      "key": "chase-sapphire-preferred",
-      "tag": "super-market",
-      "value": 2.5
-    },
-    {
-      "key": "chase-sapphire-preferred",
-      "tag": "dining",
-      "value": 2.5
-    },
-    {
-      "key": "citi-costco",
-      "tag": "gas-station",
-      "value": 4
-    },
-    {
-      "key": "citi-costco",
-      "tag": "dining",
-      "value": 3
-    },
-    {
-      "key": "chase-freedom",
-      "tag": "costco",
-      "value": 6.25,
-      "expire": "3/31/2021"
-    },
-    {
-      "key": "chase-freedom",
-      "tag": "phone",
-      "value": 6.25,
-      "expire": "3/31/2021"
-    },
-    {
-      "key": "chase-freedom",
-      "tag": "streaming",
-      "value": 6.25,
-      "expire": "3/31/2021"
-    },
-    {
-      "key": "chase-freedom",
-      "tag": "super-market",
-      "value": 6.25,
-      "start": "7/1/2021",
-      "expire": "9/30/2021"
-    },
-    {
-      "key": "chase-freedom",
-      "tag": "streaming",
-      "value": 6.25,
-      "start": "7/1/2021",
-      "expire": "9/30/2021"
-    },
-    {
-      "key": "chase-freedom-unlimited",
-      "tag": "super-market",
-      "value": 6.25,
-      "start": "7/14/2021",
-      "expire": "7/13/2022"
+      "key": "uar",
+      "tag": "bluemecury",
+      "value": 10,
+      "expire": "12/31/2024"
     }
   ]
 }
